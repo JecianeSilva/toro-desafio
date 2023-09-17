@@ -25,6 +25,7 @@ export default function Home() {
       <>
 
         <MenuTop></MenuTop>
+        <Hero></Hero>
       </>
     </>
   )
