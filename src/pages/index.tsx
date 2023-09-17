@@ -23,9 +23,11 @@ export default function Home() {
         <link  rel="preload"  href="/fonts/DINPro-Bold.woff2"  as="font" type="font/woff2"  crossOrigin="anonymous"/>
       </Head>
       <>
-
+      
         <MenuTop></MenuTop>
         <Hero></Hero>
+        <EVA></EVA>
+        <Report></Report>
       </>
     </>
   )
