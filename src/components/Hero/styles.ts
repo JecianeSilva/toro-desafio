@@ -1,7 +1,9 @@
 import styled from "styled-components";
+import { breakpoints, devices } from "../../styles/theme";
 
 export const HeroWrapper = styled.div`
     background: ${({theme}) => theme.colors.white};
+    margin-top: 65px;
     flex-shrink: 0;
     display: flex;
     align-items: center;
@@ -11,11 +13,25 @@ export const HeroContainer = styled.section`
     display: flex;
     align-items: center;
     justify-content: space-between;
-    max-width: 1140px;
-    width: calc(100% - 40px);
+    max-width: 1110px;
+    width: calc(100%);
 
     padding-top: 8rem;
     padding-bottom: 8rem;
+
+    @media ${devices.xl} {
+        max-width: ${breakpoints.lg};
+    }
+
+    @media ${devices.lg} {
+        max-width: ${breakpoints.md};
+    }
+
+    @media ${devices.md} {
+        flex-direction: column;
+        gap: 8rem;
+        padding: 4rem 2.4rem;
+    }
 `
 export const ContainerInfo = styled.div` 
     width: 44.4rem;
@@ -27,12 +43,24 @@ export const ContainerInfo = styled.div`
     h1 {
         color: ${({theme}) => theme.colors.primaryDarkest};
         font-feature-settings: 'clig' off, 'liga' off;
-        font-family: 'Din Pro Bold';
+        font-family: 'Din Pro Extra Bold';
         font-size: 4rem;
-        font-weight: 700;
         line-height: 130%;
     }
 
+    @media ${devices.xl} {
+        width: 41.5rem;
+        font-size: 3.75rem;
+    }
+
+    @media ${devices.lg} {
+        width: 33rem;
+        font-size: 3.2rem;
+    }
+
+    @media ${devices.md} {
+        width: 100%;
+    }
 `
 export const InfoList = styled.ol`
     color: ${({theme}) => theme.colors.neutralMedium} ;
@@ -45,6 +73,10 @@ export const InfoList = styled.ol`
     margin-top: 2.4rem;
 
     list-style: circle;
+
+    @media ${devices.md} {
+       font-size: 1.6rem;
+    }
 `
 export const Button = styled.a`
     display: flex;
@@ -82,12 +114,12 @@ export const SantanderContainer = styled.div`
         line-height: 1.668rem;
     }
 `
-export const ContainerImage = styled.div` 
+export const ContainerImage = styled.div`
 `
 export const HeroImage = styled.div`
     width: 100%;
-    max-width: 55.5rem;
-    min-height: 35.55rem;
+    max-width: 629px;
+    min-height: 400px;
     height: 100%;
 
     margin: 3.48rem 3.86rem 3.33rem 3.92rem;
@@ -100,7 +132,26 @@ export const HeroImage = styled.div`
     width: 100%;
     height: 100%;
 
-    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
     background-image: image-set(url('/assets/images/grafico.png') 1x, url('/assets/images/grafico2x.png') 2x);
+
+    @media ${devices.xl} {
+        max-width: 520px;
+        max-height: 334px;
+        margin: 3.1rem 3.3rem 3rem 3.4rem;
+    }
+
+    @media ${devices.lg} {
+        max-width: 416px;
+        max-height: 266px;
+        margin: 2.6rem 2.9rem 2.5rem 3rem;
+    }
+
+    @media ${devices.md} {
+        max-width: ${breakpoints.md};
+        width: 100%;
+        height: 100%;
+    }
     
 `

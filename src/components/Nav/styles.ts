@@ -1,11 +1,21 @@
 import styled from "styled-components";
+import { devices, breakpoints} from "../../styles/theme";
 
 export const Container = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
     align-self: stretch;
+    max-width: calc(${breakpoints["2xl"]} - 20rem);
+    width: 100%;
 
+    @media ${devices.xl} { 
+        max-width: calc(${breakpoints.xl} - 16.6rem);
+    } 
+    @media ${devices.lg} { 
+        max-width: calc(${breakpoints.lg} - 13.25rem);
+    }
+    
     .logo-nav-wrapper {
         display: flex;
         justify-content: center;

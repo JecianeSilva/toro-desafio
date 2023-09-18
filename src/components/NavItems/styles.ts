@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { devices } from "../../styles/theme";
 
 export const NavItem = styled.li`
     color: ${({theme}) => theme.colors.neutralMedium};
@@ -9,5 +10,12 @@ export const NavItem = styled.li`
 
     &:hover {
         color: ${({theme}) => theme.colors.neutralDarkest};
+    }
+
+    @media ${devices.xl} { 
+        font-size: 1.4rem;
+    } 
+    @media ${devices.lg} { 
+        font-size: 1.3rem;
     }
 `
