@@ -20,12 +20,38 @@ export const Container = styled.div`
         display: flex;
         justify-content: center;
         align-items: center;
+         
+        & a img {
+            @media ${devices.sm} { 
+            max-width: 101px;
+            max-height: 19px;
+        }
+    } 
+
     }
+    @media ${devices.md} { 
+        justify-content: space-between;
+        gap: 2.8rem;
+    } 
+
+    @media ${devices.sm} { 
+        gap: 1rem;
+    } 
 `
 export const ButtonContainer = styled.div`
     display: flex;
     align-items: center;
     gap: 1.6rem;
+
+    @media ${devices.md} { 
+        justify-content: space-between;
+        gap: 2.8rem;
+    }
+
+    @media ${devices.sm} { 
+        justify-content: space-between;
+        gap: 1rem;
+    } 
 `
 export const Button = styled.a`
     display: flex;
@@ -38,7 +64,7 @@ export const Button = styled.a`
     gap: 0.4rem;
 
     font-family: 'Din Pro Medium';
-    font-size: 1.4rem;
+    font-size: 1.6rem;
 
     color: ${({theme}) => theme.colors.primary};
     background-color: ${({theme}) => theme.colors.white};
@@ -55,11 +81,20 @@ export const Button = styled.a`
         color: ${({theme}) => theme.colors.white};
         background-color: ${({theme}) => theme.colors.primaryDark};
     }
+
+    
+    @media ${devices.sm} { 
+        padding: 1.2rem 1.6rem;
+        font-size: 1.4rem;
+    } 
 `
 export const LoginButton = styled.a`
     display: flex;
     align-items: center;
     gap: 1.2rem;
+
+    cursor: pointer;
+    transition: all 0.25s ease 0s;
 
     .login-text {
         color: ${({theme}) => theme.colors.neutralDark};
@@ -75,4 +110,20 @@ export const LoginButton = styled.a`
     .svg {
         color:  ${({theme}) => theme.colors.primaryDarkest};
     }
+
+    @media ${devices.sm} { 
+        display: none;
+    } 
+`
+
+export const MenuButton = styled.a`
+    display: none;
+    align-items: center;
+    gap: 2.8rem;
+    cursor: pointer;
+    transition: all 0.25s ease 0s;
+
+    @media ${devices.lg} { 
+        display: flex;
+    } 
 `

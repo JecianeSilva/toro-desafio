@@ -1,6 +1,6 @@
 import Image from "next/image"
 import { NavLink } from "../NavLinks"
-import { Button, ButtonContainer, Container, LoginButton } from "./styles"
+import { Button, ButtonContainer, Container, LoginButton, MenuButton } from "./styles"
 
 export const Nav = () => {
     const  navItems = [{
@@ -36,6 +36,9 @@ export const Nav = () => {
                     <span className="login-text">Fazer login</span>
                 </LoginButton>
                 <Button role="button" tabIndex={0}  href="https://cadastro.toroinvestimentos.com.br/campanha/home" target="_blank">Abra sua conta</Button>
+                <MenuButton>
+                    <Image src={"/assets/icons/mobile-menu.svg"} alt="Abrir Menu" loading="lazy" width={27} height={24}/>
+                </MenuButton>
             </ButtonContainer>
         </Container>
     )

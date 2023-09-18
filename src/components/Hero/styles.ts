@@ -43,7 +43,7 @@ export const ContainerInfo = styled.div`
     h1 {
         color: ${({theme}) => theme.colors.primaryDarkest};
         font-feature-settings: 'clig' off, 'liga' off;
-        font-family: 'Din Pro Extra Bold';
+        font-family: 'Din Pro Black';
         font-size: 4rem;
         line-height: 130%;
     }
@@ -72,7 +72,7 @@ export const InfoList = styled.ol`
     margin-bottom: 4rem;
     margin-top: 2.4rem;
 
-    list-style: circle;
+    list-style: disc;
 
     @media ${devices.md} {
        font-size: 1.6rem;
@@ -117,20 +117,18 @@ export const SantanderContainer = styled.div`
 export const ContainerImage = styled.div`
 `
 export const HeroImage = styled.div`
+    max-width: 555px;
     width: 100%;
-    max-width: 629px;
-    min-height: 400px;
+    min-height: 356px;
     height: 100%;
 
-    margin: 3.48rem 3.86rem 3.33rem 3.92rem;
+    margin: 3.48rem 3.87rem 3.34rem 3.93rem;
 
     display: flex;
     justify-content: center;
     align-items: center;
 
     flex-shrink: 0;
-    width: 100%;
-    height: 100%;
 
     background-size: contain;
     background-repeat: no-repeat;
@@ -139,16 +137,17 @@ export const HeroImage = styled.div`
     @media ${devices.xl} {
         max-width: 520px;
         max-height: 334px;
-        margin: 3.1rem 3.3rem 3rem 3.4rem;
+        margin: 3.26rem 3.63rem 3.13rem 3.68rem;
     }
 
     @media ${devices.lg} {
         max-width: 416px;
         max-height: 266px;
-        margin: 2.6rem 2.9rem 2.5rem 3rem;
+        margin: 2.61rem 2.9rem 2.5rem 2.94rem;
     }
 
     @media ${devices.md} {
+        background-image: image-set(url('/assets/images/grafico-mobile.png') 1x, url('/assets/images/grafico-mobile2x.png') 2x);
         max-width: ${breakpoints.md};
         width: 100%;
         height: 100%;
