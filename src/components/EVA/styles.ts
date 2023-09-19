@@ -80,6 +80,13 @@ export const ContainerImage = styled.div`
     @media ${devices.lg} {
         position: relative;
     }
+
+    @media ${devices.md} {
+        & img {
+            width: 100%;
+            height: 100%;
+        }
+    }
 `
 
 export const CardGrid = styled.div`

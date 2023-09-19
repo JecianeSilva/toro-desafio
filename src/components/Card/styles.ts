@@ -11,7 +11,7 @@ export const CardContainer = styled.div`
     padding: 2.4rem;
     flex-direction: column;
     align-items: flex-start;
-    gap: 1.6rem;
+    gap: 0.8rem;
 
     @media ${devices.md} {
         width: 100%;
@@ -23,13 +23,13 @@ export const CardContainer = styled.div`
     }
 `
 export const Title = styled.h3`
-    color: var(--color-brand-primary-dark, #306);
+    color: ${({theme}) => theme.colors.primaryDark};
     font-size: 2.1rem;
-    line-height: 130%; /* 1.70625rem */
+    font-family: 'Din pro Black';
+    line-height: 130%; 
 `
 export const Description = styled.p`
-    color: #5B6067;
-    /* WEB/Text Mobo/t3 */
+    color: ${({theme}) => theme.colors.neutralMedium};
     font-family: DIN Pro;
     font-size: 1.6rem;
     line-height: 150%;
