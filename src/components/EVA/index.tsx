@@ -3,29 +3,9 @@ import { ButtonContainer, CardGrid, ContainerImage, ContainerInfo, EvaContainer,
 import { Card } from '../Card';
 import { Button } from '../Button';
 
-export const EVA = () => {
+import cardList from '../../api/cardList.json'
 
-    const cardList = [{
-        image:"/assets/icons/actions.svg",
-        alt:"Icon File",
-        title: "Ações",
-        text: "Potencial de crescimento e valorização expressiva no longo prazo, assim como oportunidade de receber dividendos periódicos das empresas."
-    },{
-        image:"/assets/icons/fiis.svg",
-        alt:"Icon Buildings",
-        title: "FIIs",
-        text: "Ganhe renda passiva através de alugueis mensais, enquanto diversifica seus investimentos em imóveis sem a necessidade de comprar um imóvel físico."
-    },{
-        image:"/assets/icons/bdr.svg",
-        alt:"Icon Globe",
-        title: "BDRs",
-        text: "Acesso a empresas globais sem precisar investir em ações no exterior, proporcionando ampla diversificação geográfica e setorial."
-    },{
-        image:"/assets/icons/etf.svg",
-        alt:"Icon paper",
-        title: "Ações",
-        text: "Exposição simplificada a diferentes setores e índices de mercado, possibilitando diversificação instantânea em diversos ativos."
-    }]
+export const EVA = () => {
     return(
         <EvaWrapper>
             <EvaContainer id="eva-section">
