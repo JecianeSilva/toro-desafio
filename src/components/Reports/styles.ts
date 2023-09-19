@@ -116,7 +116,7 @@ export const ReportImage = styled.div`
 
     flex-shrink: 0;
 
-    background-size: cover;
+    background-size: contain;
     background-position: center;
     /* transform: rotate(4.847deg); */
     background-repeat: no-repeat;

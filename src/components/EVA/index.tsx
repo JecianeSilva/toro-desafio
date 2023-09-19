@@ -33,7 +33,7 @@ export const EVA = () => {
                 
                 <ContainerInfo>
                     <CardGrid>
-                        {cardList.map((card) => <Card image={card.image} alt={card.alt} title={card.title} text={card.text}/>)}
+                        {cardList.map((card, index) => <Card key={index} image={card.image} alt={card.alt} title={card.title} text={card.text}/>)}
                     </CardGrid>
 
                     <ButtonContainer>

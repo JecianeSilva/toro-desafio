@@ -142,7 +142,7 @@ export const HeroImage = styled.div`
 
     flex-shrink: 0;
 
-    background-size: cover;
+    background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
     background-image: image-set(url('/assets/images/grafico.png') 1x, url('/assets/images/grafico2x.png') 2x);
