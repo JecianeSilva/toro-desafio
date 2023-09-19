@@ -110,7 +110,17 @@ export const ReportImage = styled.div`
     background-repeat: no-repeat;
     background-image: image-set(url('/assets/images/phone-screen.png')1x, url('/assets/images/phone-screen2x.png') 2x);
 
+    @media ${devices.xl} {
+        max-width: 624.36px;
+        max-height: 542.39px;
+    }
+    @media ${devices.lg} {
+        max-width: 499.49px;
+        max-height: 433.91px;
+    }
     @media ${devices.md} {
         background-image: image-set(url('/assets/images/phone-screen-mobile.png'));
+        width: 100%;
+        height: 100%;
     }
 `
