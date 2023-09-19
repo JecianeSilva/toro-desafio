@@ -1,5 +1,6 @@
 import styled from "styled-components";
-import { breakpoints, devices } from "../../styles/theme";
+import { devices } from "../../styles/theme";
+import { Container } from "../Container";
 
 export const EvaWrapper = styled.div`
     background-color: ${({theme}) => theme.colors.grayIce};
@@ -8,24 +9,8 @@ export const EvaWrapper = styled.div`
     align-items: center;
     justify-content: center;
 `
-export const Container = styled.section`
-    display: flex;
+export const EvaContainer = styled(Container)`
     flex-direction: column;
-    max-width: 1110px;
-    width: calc(100%);
-    height: 100%;
-
-    padding-top: 8rem;
-    padding-bottom: 8rem;
-
-    @media ${devices.xl} {
-        max-width: ${breakpoints.lg};
-    }
-
-    @media ${devices.lg} {
-        max-width: ${breakpoints.md};
-    }
-
     @media ${devices.md} {
         padding: 4rem 2.4rem;
     }
@@ -36,6 +21,8 @@ export const Title = styled.h2`
     font-size: 3.2rem;
     line-height: 130%;
     text-align: center;
+    font-family: 'Din Pro';
+    font-weight: 400;
 
     & span {
         font-family: 'Din Pro Bold';

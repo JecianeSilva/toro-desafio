@@ -50,6 +50,9 @@ export const Title = styled.h2`
     font-size: 3.2rem;
     line-height: 130%;
     margin-bottom: 2.4rem;
+    font-family: 'Din Pro';
+    font-weight: 400;
+    
     & span {
         font-family: 'Din Pro Bold'
     }
