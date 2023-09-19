@@ -67,11 +67,11 @@ export const ContainerInfo = styled.div`
     }
 `
 export const InfoList = styled.ol`
-    color: ${({theme}) => theme.colors.neutralMedium} ;
+    color: ${({theme}) => theme.colors.neutralMedium};
     font-feature-settings: 'clig' off, 'liga' off;
     font-size: 1.8rem;
     line-height: 150%;
-    opacity: 0.8;
+    /* opacity: 0.8; */
     margin-left: 2rem;
     margin-bottom: 4rem;
     margin-top: 2.4rem;
