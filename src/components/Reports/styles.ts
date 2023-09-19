@@ -67,7 +67,7 @@ export const Title = styled.h2`
     line-height: 130%;
     margin-bottom: 2.4rem;
     & span {
-        font-family: 'Din Pro Black'
+        font-family: 'Din Pro Bold'
     }
 
     @media ${devices.xl} {
@@ -120,5 +120,9 @@ export const ReportImage = styled.div`
     background-position: center;
     /* transform: rotate(4.847deg); */
     background-repeat: no-repeat;
-    background-image: image-set(url('/assets/images/phone-screen.png') 1x, url('/assets/images/phone-screen2x.png') 2x);
+    background-image: image-set(url('/assets/images/phone-screen.png'));
+
+    @media ${devices.md} {
+        background-image: image-set(url('/assets/images/phone-screen-mobile.png'));        
+    }
 `

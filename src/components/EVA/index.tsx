@@ -37,11 +37,11 @@ export const EVA = () => {
                     </CardGrid>
 
                     <ButtonContainer>
-                        <Button label="Abra sua conta grátis" href="https://cadastro.toroinvestimentos.com.br/campanha/home" />
+                        <Button label="Abra sua conta grátis" href="/campanha/home" target="_blank"/>
                     </ButtonContainer>
 
                     <ContainerImage>
-                        <Image src={'/assets/images/evaristo2x.png'} alt="Foto do Cliente Evaristo" width={514} height={606}/>
+                        <Image src={'/assets/images/evaristo2x.png'} alt="Foto do Cliente Evaristo" width={514} height={606} loading='lazy' objectFit='contain'/>
                     </ContainerImage>
                 </ContainerInfo>
                            

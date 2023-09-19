@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import { Button, ContainerImage, ContainerInfo, HeroContainer, HeroImage, HeroWrapper, InfoList, SantanderContainer } from './styles';
+import { Button, ContainerInfo, HeroContainer, HeroImage, HeroWrapper, InfoList, SantanderContainer } from './styles';
 
 export const Hero = () => {
     return(
@@ -12,7 +12,7 @@ export const Hero = () => {
                         <li>Recomendações de investimentos por experts.</li>
                         <li>Corretagem Zero.</li> 
                     </InfoList>
-                    <Button role="button" tabIndex={0}  href="https://cadastro.toroinvestimentos.com.br/campanha/home" target="_blank">Abra sua conta grátis</Button>
+                    <Button role="button" tabIndex={0}  href="/campanha/home" target="_blank">Abra sua conta grátis</Button>
                     <SantanderContainer>
                         <span>Uma empresa</span>
                         <Image src='/assets/logos/logo-santander.svg' width={156} height={15} alt="Santander" loading='lazy' />

@@ -9,7 +9,7 @@ export const Report = () => {
                 <ContainerInfo>
                     <Title>Acesse <span>relatórios exclusivos e recomendações de investimentos</span> de <span>forma gratuita</span></Title>
                     <Detail>Tome decisões informadas, diversifique sua carteira e maximize seu potencial de ganho com os materiais exclusivos produzidos pela nossa equipe de Análise.</Detail>
-                    <Button href="#" label="Abra sua conta grátis"/>
+                    <Button href="/campanha/home" label="Abra sua conta grátis"/>
                 </ContainerInfo>
             </ReportContainer>
         </ReportWrapper>
