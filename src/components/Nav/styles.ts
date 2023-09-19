@@ -20,8 +20,10 @@ export const Container = styled.div`
         display: flex;
         justify-content: center;
         align-items: center;
-         
+        
         & a img {
+            cursor: pointer;
+
             @media ${devices.sm} { 
             max-width: 101px;
             max-height: 19px;

@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { devices } from "../../styles/theme";
 
-export const Container = styled.ul`
+export const Container = styled.nav`
     display: flex;
     align-items: flex-start;
     gap: 4rem;

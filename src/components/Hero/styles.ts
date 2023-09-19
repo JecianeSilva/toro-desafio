@@ -59,6 +59,10 @@ export const ContainerInfo = styled.div`
     }
 
     @media ${devices.md} {
+        width: 80%;
+    }
+
+    @media ${devices.sm} {
         width: 100%;
     }
 `
@@ -100,6 +104,14 @@ export const Button = styled.a`
     &:hover {
         color: ${({theme}) => theme.colors.white};
         background-color: ${({theme}) => theme.colors.primaryDark};
+    }
+
+    @media ${devices.md} {
+        max-width: 80%;
+    }
+
+    @media ${devices.md} {
+        max-width: 100%;
     }
 `
 export const SantanderContainer = styled.div`
@@ -148,7 +160,6 @@ export const HeroImage = styled.div`
 
     @media ${devices.md} {
         background-image: image-set(url('/assets/images/grafico-mobile.png') 1x, url('/assets/images/grafico-mobile2x.png') 2x);
-        max-width: ${breakpoints.md};
         width: 100%;
         height: 100%;
     }

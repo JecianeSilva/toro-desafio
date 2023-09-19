@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { devices } from "../../styles/theme";
 
-export const NavItem = styled.li`
+export const NavItem = styled.div`
     color: ${({theme}) => theme.colors.neutralMedium};
     font-size: 1.6rem;
     line-height: 150%;
