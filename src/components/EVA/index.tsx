@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import { ButtonContainer, CardGrid, Container, ContainerImage, ContainerInfo, EvaWrapper, Title } from './styles';
+import { ButtonContainer, CardGrid, ContainerImage, ContainerInfo, EvaContainer, EvaWrapper, Title } from './styles';
 import { Card } from '../Card';
 import { Button } from '../Button';
 
@@ -28,9 +28,9 @@ export const EVA = () => {
     }]
     return(
         <EvaWrapper>
-            <Container id="eva-section">
-                <Title>Conheça os <span>benefícios dos diversos ativos de Bolsa</span> e <span>alavanque seus resultados no longo prazo</span></Title>
-                
+            <EvaContainer id="eva-section">
+                <Title>Conheça os <span>benefícios dos diversos ativos de Bolsa</span> e <span>alavanque seus resultados no longo prazo</span></Title>   
+
                 <ContainerInfo>
                     <CardGrid>
                         {cardList.map((card, index) => <Card key={index} image={card.image} alt={card.alt} title={card.title} text={card.text}/>)}
@@ -45,7 +45,7 @@ export const EVA = () => {
                     </ContainerImage>
                 </ContainerInfo>
                            
-            </Container>
+            </EvaContainer>
         </EvaWrapper>
     )
 };

@@ -1,8 +1,8 @@
 import { ContainerSection } from "./styles"
 
-export const Container = ({children, flexDirection = 'row', justifyContent = "space-between",id, ...props}) => {
+export const Container = ({children, id, ...props}) => {
     return(
-        <ContainerSection flex-direction={flexDirection} justify-content={justifyContent} {...props}>
+        <ContainerSection id={id} {...props}>
             {children}
         </ContainerSection>
     )

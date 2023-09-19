@@ -1,5 +1,6 @@
 import styled from "styled-components";
-import { breakpoints, devices } from "../../styles/theme";
+import { devices } from "../../styles/theme";
+import { Container } from "../Container";
 
 export const ReportWrapper = styled.div`
     background-color: ${({theme}) => theme.colors.grayLight};
@@ -8,24 +9,7 @@ export const ReportWrapper = styled.div`
     align-items: center;
     justify-content: center;
 `    
-export const ReportContainer = styled.section`
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    max-width: 1110px;
-    width: calc(100%);
-
-    padding-top: 8rem;
-    padding-bottom: 8rem;
-
-    @media ${devices.xl} {
-        max-width: ${breakpoints.lg};
-    }
-
-    @media ${devices.lg} {
-        max-width: ${breakpoints.md};
-    }
-
+export const ReportContainer = styled(Container)`
     @media ${devices.md} {
         flex-direction: column-reverse;
         gap: 4rem;
