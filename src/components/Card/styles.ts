@@ -25,12 +25,11 @@ export const CardContainer = styled.div`
 export const Title = styled.h3`
     color: ${({theme}) => theme.colors.primaryDark};
     font-size: 2.1rem;
-    font-family: 'Din pro Black';
+    font-family: 'Din pro Bold';
     line-height: 130%; 
 `
 export const Description = styled.p`
     color: ${({theme}) => theme.colors.neutralMedium};
-    font-family: DIN Pro;
     font-size: 1.6rem;
     line-height: 150%;
 `

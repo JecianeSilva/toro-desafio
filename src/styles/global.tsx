@@ -29,15 +29,6 @@ const GlobalStyle = createGlobalStyle`
     font-family: 'Din Pro Bold';
     src: url('/fonts/DINPro-Bold.woff2') format('woff2');
     font-style: normal;
-    font-weight: 600;
-    font-display: swap;
-  }
-
-  
-  @font-face {
-    font-family: 'Din Pro Black';
-    src: url('/fonts/DINPro-Bold.woff2') format('woff2');
-    font-style: normal;
     font-weight: 700;
     font-display: swap;
   }

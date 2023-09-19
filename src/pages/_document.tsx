@@ -41,7 +41,6 @@ export default class MyDocument extends Document {
             <link  rel="preload"  href="/fonts/DINPro.woff2"  as="font" type="font/woff2"  crossOrigin="anonymous"/>
             <link  rel="preload"  href="/fonts/DINPro-Medium.woff2"  as="font" type="font/woff2"  crossOrigin="anonymous"/>
             <link  rel="preload"  href="/fonts/DINPro-Bold.woff2"  as="font" type="font/woff2"  crossOrigin="anonymous"/>
-            <link  rel="preload"  href="/fonts/DINPro-Black.woff2"  as="font" type="font/woff2"  crossOrigin="anonymous"/>
           </Head>
         <body>
           <Main></Main>

@@ -38,7 +38,7 @@ export const Title = styled.h2`
     text-align: center;
 
     & span {
-        font-family: 'Din Pro Black';
+        font-family: 'Din Pro Bold';
     }
 
     @media ${devices.xl} {

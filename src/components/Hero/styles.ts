@@ -43,7 +43,7 @@ export const ContainerInfo = styled.div`
     h1 {
         color: ${({theme}) => theme.colors.primaryDarkest};
         font-feature-settings: 'clig' off, 'liga' off;
-        font-family: 'Din Pro Black';
+        font-family: 'Din Pro Bold';
         font-size: 4rem;
         line-height: 130%;
     }
