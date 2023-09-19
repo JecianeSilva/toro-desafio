@@ -3,14 +3,6 @@ import { createGlobalStyle } from 'styled-components'
 
 const GlobalStyle = createGlobalStyle`
   @font-face {
-    font-family: 'Din Pro Light';
-    src: url('/fonts/DINPro-Light.woff2') format('woff2');
-    font-style: normal;
-    font-weight: 300;
-    font-display: swap;
-  }
-
-  @font-face {
     font-family: 'Din Pro';
     src: url('/fonts/DINPro.woff2') format('woff2');
     font-style: normal;
