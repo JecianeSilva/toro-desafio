@@ -1,7 +1,7 @@
 import { Nav } from "../Nav"
 import { ContainerWrapper } from "./styles"
 
-export const MenuTop = () => {
+export const Header = () => {
     return(
         <ContainerWrapper>
             <Nav></Nav>

@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { devices } from "../../styles/theme";
 
-export const ContainerWrapper = styled.div`
+export const ContainerWrapper = styled.header`
     top: 0px;
     left: 0px;
     right: 0px;
