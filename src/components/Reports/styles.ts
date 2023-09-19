@@ -1,5 +1,6 @@
 import styled from "styled-components";
-import { breakpoints, devices } from "../../styles/theme";
+import { devices } from "../../styles/theme";
+import { Container } from "../Container";
 
 export const ReportWrapper = styled.div`
     background-color: ${({theme}) => theme.colors.grayLight};
@@ -7,25 +8,9 @@ export const ReportWrapper = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-`    
-export const ReportContainer = styled.section`
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    max-width: 1110px;
-    width: calc(100%);
-
-    padding-top: 8rem;
-    padding-bottom: 8rem;
-
-    @media ${devices.xl} {
-        max-width: ${breakpoints.lg};
-    }
-
-    @media ${devices.lg} {
-        max-width: ${breakpoints.md};
-    }
-
+`
+export const ReportContainer = styled(Container)`
+    padding: 0;
     @media ${devices.md} {
         flex-direction: column-reverse;
         gap: 4rem;
@@ -33,7 +18,7 @@ export const ReportContainer = styled.section`
     }
 `
 
-export const ContainerInfo = styled.div` 
+export const ContainerInfo = styled.div`
     width: 53.8rem;
     max-width: 100%;
     display: flex;
@@ -66,6 +51,9 @@ export const Title = styled.h2`
     font-size: 3.2rem;
     line-height: 130%;
     margin-bottom: 2.4rem;
+    font-family: 'Din Pro';
+    font-weight: 400;
+
     & span {
         font-family: 'Din Pro Bold'
     }
@@ -87,7 +75,7 @@ export const Title = styled.h2`
 
 export const Detail = styled.p`
     font-size: 1.8rem;
-    line-height: 150%; 
+    line-height: 150%;
     margin-bottom: 4rem;
 
     @media ${devices.xl} {
@@ -105,9 +93,9 @@ export const Detail = styled.p`
 `
 
 export const ReportImage = styled.div`
-    max-width: 500px;
+    max-width: 666.31px;
     width: 100%;
-    min-height: 392px;
+    min-height: 578.8px;
     height: 100%;
 
     display: flex;
@@ -120,9 +108,9 @@ export const ReportImage = styled.div`
     background-position: center;
     /* transform: rotate(4.847deg); */
     background-repeat: no-repeat;
-    background-image: image-set(url('/assets/images/phone-screen.png'));
+    background-image: image-set(url('/assets/images/phone-screen.png')1x, url('/assets/images/phone-screen2x.png') 2x);
 
     @media ${devices.md} {
-        background-image: image-set(url('/assets/images/phone-screen-mobile.png'));        
+        background-image: image-set(url('/assets/images/phone-screen-mobile.png'));
     }
 `

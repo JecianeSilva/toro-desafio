@@ -1,5 +1,6 @@
 import styled from "styled-components";
-import { breakpoints, devices } from "../../styles/theme";
+import { devices } from "../../styles/theme";
+import { Container } from "../Container";
 
 export const HeroWrapper = styled.div`
     background: ${({theme}) => theme.colors.white};
@@ -9,28 +10,26 @@ export const HeroWrapper = styled.div`
     align-items: center;
     justify-content: center;
 `    
-export const HeroContainer = styled.section`
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    max-width: 1110px;
-    width: calc(100%);
-
-    padding-top: 8rem;
-    padding-bottom: 8rem;
-
-    @media ${devices.xl} {
-        max-width: ${breakpoints.lg};
-    }
-
-    @media ${devices.lg} {
-        max-width: ${breakpoints.md};
-    }
-
+export const HeroContainer = styled(Container)`
     @media ${devices.md} {
         flex-direction: column;
         gap: 8rem;
         padding: 4rem 2.4rem;
+    }
+`
+export const Title = styled.h1`
+    color: ${({theme}) => theme.colors.primaryDarkest};
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: 'Din Pro Bold';
+    font-size: 4rem;
+    line-height: 130%;
+
+    @media ${devices.xl} {
+        font-size: 3.75rem;
+    }
+
+    @media ${devices.lg} {
+        font-size: 3.2rem;
     }
 `
 export const ContainerInfo = styled.div` 
@@ -40,22 +39,12 @@ export const ContainerInfo = styled.div`
     flex-direction: column;
     align-items: flex-start;
 
-    h1 {
-        color: ${({theme}) => theme.colors.primaryDarkest};
-        font-feature-settings: 'clig' off, 'liga' off;
-        font-family: 'Din Pro Bold';
-        font-size: 4rem;
-        line-height: 130%;
-    }
-
     @media ${devices.xl} {
         width: 41.5rem;
-        font-size: 3.75rem;
     }
 
     @media ${devices.lg} {
         width: 33rem;
-        font-size: 3.2rem;
     }
 
     @media ${devices.md} {

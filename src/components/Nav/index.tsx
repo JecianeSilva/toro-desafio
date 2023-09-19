@@ -1,27 +1,9 @@
 import Image from "next/image"
 import { NavLink } from "../NavLinks"
 import { Button, ButtonContainer, Container, LoginButton, MenuButton } from "./styles"
+import navItems from "../../api/navItems.json"
 
 export const Nav = () => {
-    const  navItems = [{
-        children: 'Bolsa',
-        link: '/bolsa',
-    },{
-        children: 'Renda Fixa',
-        link: '/renda-fixa',
-    },{
-        children: 'Fundos',
-        link: '/fundos',
-    },{
-        children: 'Plataformas de Trading',
-        link: '/plataformas',
-    },{
-        children: 'Aprenda',
-        link: '/aprenda',
-    },{
-        children: 'Simulador',
-        link: '/simulador',
-    }]
     return(
         <Container> 
             <div className="logo-nav-wrapper">

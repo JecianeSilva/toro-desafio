@@ -1,12 +1,12 @@
 import Image from 'next/image';
-import { Button, ContainerInfo, HeroContainer, HeroImage, HeroWrapper, InfoList, SantanderContainer } from './styles';
+import { Button, ContainerInfo, HeroContainer, HeroImage, HeroWrapper, InfoList, SantanderContainer, Title } from './styles';
 
 export const Hero = () => {
     return(
         <HeroWrapper>
             <HeroContainer id="hero-section">
                 <ContainerInfo>
-                    <h1>Aumente seu potencial de ganho com quem vence na Bolsa há anos</h1>   
+                    <Title>Aumente seu potencial de ganho com quem vence na Bolsa há anos</Title>   
                     <InfoList>
                         <li>Assessoria Exclusiva gratuita.</li>
                         <li>Recomendações de investimentos por experts.</li>
