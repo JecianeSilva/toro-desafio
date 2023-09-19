@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { devices } from "../../styles/theme";
 
 export const ButtonContainer = styled.a`
     display: flex;
@@ -22,5 +23,13 @@ export const ButtonContainer = styled.a`
     &:hover {
         color: ${({theme}) => theme.colors.white};
         background-color: ${({theme}) => theme.colors.primaryDark};
+    }
+    
+    @media ${devices.md} {
+        max-width: 80%;
+    }
+
+    @media ${devices.sm} {
+        max-width: 100%;
     }
 `
