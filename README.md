@@ -1,7 +1,7 @@
 <div align="center">
 	<h2>Desafio Frontend - Toro Investimentos</h2>
 	<p>Projeto desenvolvido afim de consluir o desafio proposto pela Toro Investimentos, onde o desafio propõe: implementar um design proposto pelo time de UI/UX. </p> 
-  <img width="300" src="" alt="Toro Investimentos"/>
+  	<img width="600" src="https://github.com/JecianeSilva/toro-desafio/assets/43557425/35010ae7-f714-4406-b612-564fe884ff52" alt="Toro Investimentos"/>
 </div>
 
 <p align="center">
@@ -28,8 +28,10 @@
 - SEO
 - Performance (Core Web Vitals)
 
-##  Analise pelo LightHouse
+##  Analise pelo Lighthouse
 
+<img width="400" src="https://github.com/JecianeSilva/toro-desafio/assets/43557425/50560610-1130-41fa-a14c-20480496f58f" alt="Lighthouse analise desktop"/>
+<img width="400" src="https://github.com/JecianeSilva/toro-desafio/assets/43557425/1e28cb10-50c9-4768-80b1-72eaf2dd257b" alt="Lighthouse analise mobile"/>
 
 <br></br>
 <div align="center">
