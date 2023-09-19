@@ -6,7 +6,7 @@ const defaultMeta = {
     title: 'Melhores ações para investir na Bolsa',
     siteName: 'Toro Investimentos',
     description:'Veja onde e como investir na Bolsa de Valores hoje, mesmo com pouco dinheiro, com as carteiras das melhores ações recomendadas pela Toro e Corretagem Zero.',
-    url: 'https://www.toroinvestimentos.com.br/',
+    url: 'https://toro-desafio.vercel.app/',
     // url: '/',
     type: 'website',
 };
@@ -14,9 +14,13 @@ const defaultMeta = {
 const favicons = [
     {
         rel: 'icon',
+        href: '/favicon/favicon.ico',
+    },
+    {
+        rel: 'icon',
         type: 'image/png',
-        sizes: '96x96',
-        href: '/favicon-96x96.png',
+        sizes: '16x16',
+        href: '/favicon-16x16.png',
     },
     {
         rel: 'icon',
@@ -27,26 +31,13 @@ const favicons = [
     {
         rel: 'icon',
         type: 'image/png',
-        sizes: '16x16',
-        href: '/favicon-16x16.png',
-    },
-    {
-        rel: 'apple-touch-icon',
-        type: 'image/png',
         sizes: '96x96',
-        href: '/favicon-96x96.png',
-    },
-    {
-        rel: 'apple-touch-icon',
+        href: '/android-icon-96x96.png',
+    },{
+        rel: 'icon',
         type: 'image/png',
-        sizes: '32x32',
-        href: '/favicon-32x32.png',
-    },
-    {
-        rel: 'apple-touch-icon',
-        type: 'image/png',
-        sizes: '16x16',
-        href: '/favicon-16x16.png',
+        sizes: '144x144',
+        href: '/android-icon-144x144.png',
     },
     {
         rel: 'manifest',
