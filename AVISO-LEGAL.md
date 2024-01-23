@@ -1,0 +1,1 @@
+AVISO LEGAL: ESTA PÁGINA FOI FEITA COMO UM PROJETO DE TESTE, EDUCACIONAL E PESSOAL. Este NÃO é o site oficial da empresa ou marca identificada na página. O CODIGO desenvolvido neste projeto NÃO é afiliado de forma alguma à empresa ou marca. Esta página é um projeto pessoal realizado no âmbito de um teste educativo para entrar na empresa em questão.
