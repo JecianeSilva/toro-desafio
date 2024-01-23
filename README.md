@@ -34,6 +34,10 @@
 <img width="400" src="https://github.com/JecianeSilva/toro-desafio/assets/43557425/1e28cb10-50c9-4768-80b1-72eaf2dd257b" alt="Lighthouse analise mobile"/>
 
 <br></br>
+## Aviso Legal
+
+Por favor, leia nosso [aviso legal](AVISO-LEGAL.md) para informações importantes sobre o uso deste projeto.
+
 <div align="center">
 <p>Made by <a href="https://jecianesilva.github.io/">Jeciane Amorim</a></p>
 </div>
