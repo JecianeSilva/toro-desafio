@@ -28,11 +28,6 @@
 - SEO
 - Performance (Core Web Vitals)
 
-##  Analise pelo Lighthouse
-
-<img width="400" src="https://github.com/JecianeSilva/toro-desafio/assets/43557425/50560610-1130-41fa-a14c-20480496f58f" alt="Lighthouse analise desktop"/>
-<img width="400" src="https://github.com/JecianeSilva/toro-desafio/assets/43557425/1e28cb10-50c9-4768-80b1-72eaf2dd257b" alt="Lighthouse analise mobile"/>
-
 <br></br>
 ## Aviso Legal
 
